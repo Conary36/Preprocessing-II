@@ -1,1 +1,17 @@
 // Mixins in here
+
+
+.button(@color, @background) {
+    padding: 3% 5%;
+    border-radius: 3px;
+    background-color: @background;
+    text-align: center;
+    font-size: 1.6rem;
+    color: @color;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken(@background, 5%);
+    }
+}
+
